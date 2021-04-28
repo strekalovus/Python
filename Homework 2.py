@@ -1,12 +1,6 @@
-time = int(input("Введите время в секундах: "))
-sec = time % 60
-minute = (time - sec) // 60
-hour = minute // 60
-minute = minute % 60
-if sec == 0:
-    sec = '00'
-if minute == 0:
-    minute = '00'
-if hour == 0:
-    hour = '00'
-print(f'{hour}:{minute}:{sec}')
+def my_func(name, family, year, city, email, phone):
+    print(name, family, year, city, email, phone)
+
+
+my_func(name='Иван', family='Иванов', year=1980, city='Москва', email='ivanivanov1980@mail.ru', phone='+79876543210')
+

@@ -1,9 +1,15 @@
-rev = int(input('Введите выручку Компании за последний год в рублях: '))
-cost = int(input('Введите издержки Компании за последний год в рублях: '))
-result = rev - cost
-if result < 0:
-    print('Убыток от деятельности Компании за последний год составил', result, 'руб.')
-else:
-    print('Прибыль от деятельности Компании за последний год составила', result, 'руб.,', 'рентабельность выручки', result / rev * 100, '%')
-    staff = int(input('Введите среднесписочную численность сотрудников Компании: '))
-    print('В расчёте на одного сотрудника прибыль составила', result / staff, 'руб.')
+result = 0
+while True:
+    line = input("Введите число или специальный символ 'e': ")
+    symbols = line.split(" ")
+    for symbol in symbols:
+        try:
+            number = float(symbol)
+            result = result + number
+        except ValueError:
+            if symbol == 'e':
+                print(f"Сумма введённых чисел {result}.")
+                exit()
+
+
+

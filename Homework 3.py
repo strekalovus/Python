@@ -1,3 +1,7 @@
-num = input("Введите целое число: ")
-num = int(num) + int(num*2) + int(num*3)
-print(num)
+def my_func(a, b, c):
+    minimum = min(a, b, c)
+    sum_max = a + b + c - minimum
+    print(sum_max)
+
+
+my_func(9, 8, 7)

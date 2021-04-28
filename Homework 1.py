@@ -1,7 +1,14 @@
-a = 1
-b = 2
-c = 3
-d = 4
-e = 5
-f = 'вышел зайчик погулять'
-print(a, b, c, d, e, f)
+a = int(input("Введите делимое целое число: "))
+b = int(input("Введите целое число делитель: "))
+
+
+def my_func(dividend, divisor):
+    if divisor == 0:
+        quotient = 0
+    else:
+        quotient = dividend / divisor
+    return quotient
+
+
+result = my_func(a, b)
+print(result)

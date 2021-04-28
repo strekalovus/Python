@@ -1,8 +1,7 @@
-num = int(input('Введите целое число: '))
-rem = num % 10
-num = num // 10
-while num > 1:
-    if num % 10 > rem:
-        rem = num % 10
-    num = num // 10
-print(rem)
+def my_func(x, y):
+    result = x ** y
+    return result
+
+
+response = my_func(2, -2)
+print(response)
